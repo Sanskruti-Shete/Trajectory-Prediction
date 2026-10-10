@@ -1,0 +1,63 @@
+{
+  "blockers": [
+    "active_g3: BLOCKED \u2014 ACTIVE G3 FREEZE REQUIRED: governance dependency missing or hash mismatch: experiments/artifacts.csv",
+    "test_access_state: final-test access is not authorized for exactly one run"
+  ],
+  "items": [
+    {
+      "detail": "final_test_evaluation_v1",
+      "name": "phase20_config",
+      "status": "PASS"
+    },
+    {
+      "detail": "BLOCKED \u2014 ACTIVE G3 FREEZE REQUIRED: governance dependency missing or hash mismatch: experiments/artifacts.csv",
+      "name": "active_g3",
+      "status": "BLOCKED"
+    },
+    {
+      "detail": "ee0370a1dcd24d41f4c001edaeb22fd123ccc1c7346d1d95a64211ee3dbd3148",
+      "name": "bootstrap",
+      "status": "PASS"
+    },
+    {
+      "detail": "stage5_final_test_retry_policy_v1",
+      "name": "retry_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": "selected/nonselected exposure fixed",
+      "name": "final_evaluation_plan",
+      "status": "PASS"
+    },
+    {
+      "detail": "prespecified_error_analysis_slice_spec_v1",
+      "name": "error_analysis_slices",
+      "status": "PASS"
+    },
+    {
+      "detail": "loader and evaluator entrypoints frozen",
+      "name": "execution_entrypoints",
+      "status": "PASS"
+    },
+    {
+      "detail": "g4_test_evaluation_freeze_v1",
+      "name": "g4_schema",
+      "status": "PASS"
+    },
+    {
+      "detail": "critical lineage clean",
+      "name": "registry_lineage",
+      "status": "PASS"
+    },
+    {
+      "detail": "final-test access is not authorized for exactly one run",
+      "name": "test_access_state",
+      "status": "BLOCKED"
+    }
+  ],
+  "overall_status": "BLOCKED",
+  "report_sha256": "d071a9dab444fa7b9be499cb256190bc90989311c0f57a02e0480aed30b1288b",
+  "report_version": "phase20_pretest_audit_v1",
+  "test_data_accessed": false,
+  "test_loader_calls": 0
+}

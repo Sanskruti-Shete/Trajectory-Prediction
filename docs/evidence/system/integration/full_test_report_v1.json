@@ -1,0 +1,15 @@
+{
+  "command": "PYTHONPATH=src:tests:. python3 -m pytest -q --junitxml=<pytest-junit.xml>",
+  "counts": {
+    "errors": 0,
+    "failures": 2,
+    "passed": 1574,
+    "skipped": 21,
+    "tests": 1597
+  },
+  "evidence_version": "phase16_test_report_v1",
+  "junit_sha256": "b6cb0bb324dd589e7a465273451c6674f5b168923274f6f88ae4d99a1b3a14a3",
+  "python": "3.9.6",
+  "scope": "repository",
+  "status": "BLOCKED"
+}

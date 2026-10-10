@@ -1,0 +1,60 @@
+{
+  "blockers": [],
+  "items": [
+    {
+      "detail": "final_test_evaluation_v1",
+      "name": "phase20_config",
+      "status": "PASS"
+    },
+    {
+      "detail": "75b3e41b5d24c787a5cc3e384df0f2363134a0e5585639f120651ac0ef09254e",
+      "name": "active_g3",
+      "status": "PASS"
+    },
+    {
+      "detail": "ee0370a1dcd24d41f4c001edaeb22fd123ccc1c7346d1d95a64211ee3dbd3148",
+      "name": "bootstrap",
+      "status": "PASS"
+    },
+    {
+      "detail": "stage5_final_test_retry_policy_v1",
+      "name": "retry_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": "selected/nonselected exposure fixed",
+      "name": "final_evaluation_plan",
+      "status": "PASS"
+    },
+    {
+      "detail": "prespecified_error_analysis_slice_spec_v1",
+      "name": "error_analysis_slices",
+      "status": "PASS"
+    },
+    {
+      "detail": "loader and evaluator entrypoints frozen",
+      "name": "execution_entrypoints",
+      "status": "PASS"
+    },
+    {
+      "detail": "g4_test_evaluation_freeze_v1",
+      "name": "g4_schema",
+      "status": "PASS"
+    },
+    {
+      "detail": "critical lineage clean",
+      "name": "registry_lineage",
+      "status": "PASS"
+    },
+    {
+      "detail": "AUTHORIZED_NOT_RUN",
+      "name": "test_access_state",
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS",
+  "report_sha256": "640097bc0bf756c06571e328bba6e3c81cad25614927127a4d45ebdd8c0fe352",
+  "report_version": "phase20_pretest_audit_v1",
+  "test_data_accessed": false,
+  "test_loader_calls": 0
+}

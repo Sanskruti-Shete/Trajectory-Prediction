@@ -1,0 +1,13 @@
+{
+  "evidence_version": "environment_audit_v1",
+  "final_lock": {
+    "detail": "BLOCKED \u2014 EXACT ENVIRONMENT LOCK REQUIRED FOR FINAL REPRODUCIBILITY CLAIM",
+    "lock_ref": null,
+    "lock_sha256": null,
+    "status": "BLOCKED"
+  },
+  "observed_snapshot": {
+    "path": "observed_environment_phase15.json",
+    "sha256": "0fb5b4377fa2a87696a6659b09c9df32dbe7213e60442f63ac479ee9a271bd6f"
+  }
+}

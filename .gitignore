@@ -1,0 +1,69 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+!.env.test.example
+.DS_Store
+data/raw/
+data/mimic*/
+data/physionet*/
+*.sqlite3
+*.db
+*.pem
+*.key
+*.tmp
+.cache/
+
+# Reproducible Phase-9 production outputs are local build products. The raw
+# and canonical JSONL files exceed GitHub's per-file limit; commit their
+# versioned builders/contracts, not regenerated bulk data.
+artifacts/data/synthetic/final/
+artifacts/data/synthetic/cohorts/final/
+artifacts/data/synthetic/timelines/final/
+artifacts/data/synthetic/features/final/
+artifacts/data/synthetic/pre_split/final/
+artifacts/data/synthetic/phase10/final/
+artifacts/test-results/
+
+# Same rationale for the Performance-V2 Phase-3 fresh test cohort's raw/
+# cohort/timeline/features/pre_split pipeline outputs: large, deterministic
+# rebuilds. The small spec/audit/split/freeze artifacts that hash-bind them
+# (artifacts/performance_v2/phase3/fresh_test_cohort_*.json, fresh_test_split_*,
+# artifacts/performance_v2/governance/v2_fresh_test_*.json) remain tracked.
+artifacts/performance_v2/phase3/fresh_test_cohort/
+
+# Read-only historical/reference repository; never vendor as an embedded Git repo.
+Heart-Failure-Recovery-and-Deterioration-Trajectory-Prediction/
+
+# Frontend (SvelteKit): dependencies and build output are regenerated via
+# `npm install` / `npm run build`, never committed.
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/.vercel/
+frontend/.vite/
+
+# Playwright: saved auth state (a live session token) and run artifacts.
+frontend/tests/e2e/.auth/
+frontend/playwright-report/
+frontend/test-results/
+
+# Kokoro narration microservice: isolated Python 3.12 venv (kokoro-onnx needs
+# a newer onnxruntime than the project's pinned Python 3.9) and its
+# downloaded model weights. Regenerate with the commands in RUNBOOK.md; never
+# commit a ~340MB binary pair or a second interpreter's site-packages.
+.venv-tts/
+models/kokoro/*.onnx
+models/kokoro/*.bin
+
+# Health-record report uploads (local object-storage backend): user-supplied
+# files, synthetic/demo-only by policy, never committed. See
+# src/serving/v2/report_storage.py and docs/product_v2/HEALTH_RECORD_ARCHITECTURE.md.
+runtime/uploads/
